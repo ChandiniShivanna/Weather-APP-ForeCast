@@ -12,7 +12,6 @@ import HourlyForecast from "./components/HourlyForecast";
 import WeatherChart from "./components/WeatherChart";
 import AQI from "./components/AQI";
 import SunriseSunset from "./components/SunriseSunset";
-import WeatherEffects from "./components/WeatherEffects";
 import VoiceSearch from "./components/VoiceSearch";
 import WeatherMap from "./components/WeatherMap";
 
@@ -134,7 +133,7 @@ function App() {
       <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]"></div>
 
       {/* Weather Effects */}
-      {weather && <WeatherEffects condition={weather.weather[0].main} />}
+      {weather}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-6">
         {/* Header */}
